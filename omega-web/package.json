@@ -22,5 +22,6 @@
   },
   "scripts": {
     "dev": "npm link omega-pac && npm link"
-  }
+  },
+  "dependencies": {}
 }

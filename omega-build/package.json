@@ -7,7 +7,10 @@
     "grunt-hub": "^0.7.0"
   },
   "scripts": {
-    "deps": "npm install && (cd ../omega-pac && npm install) && (cd ../omega-target && npm install) && (cd ../omega-web && npm install && bower install) && (cd ../omega-target-chromium-extension/ && npm install)",
+    "deps": "npm install --strict-ssl=false && (cd ../omega-pac && npm install --strict-ssl=false) && (cd ../omega-target && npm install --strict-ssl=false) && (cd ../omega-web && npm install --strict-ssl=false && bower install) && (cd ../omega-target-chromium-extension/ && npm install --strict-ssl=false)",
     "dev": "(cd ../omega-pac && npm run dev) && (cd ../omega-target && npm run dev) && (cd ../omega-web && npm run dev) && (cd ../omega-target-chromium-extension/ && npm run dev)"
+  },
+  "dependencies": {
+    "bower-canary": "^1.3.0"
   }
 }
